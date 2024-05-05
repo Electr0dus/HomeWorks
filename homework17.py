@@ -6,5 +6,5 @@ class Buiding:
     def __eq__(self, other):
         one = self.numberOfFloors == other.numberOfFloors
         second = self.buildingType == other.buildingType
-        return one, second
+        return one and second
 

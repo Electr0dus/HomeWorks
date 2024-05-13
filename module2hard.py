@@ -1,6 +1,7 @@
 val = int(input('Введите число от 3 до 20 '))
-while val  < 3 or val > 20:
+while val < 3 or val > 20:
     val = int(input('Введите число от 3 до 20 '))
+
 
 # list_val.append(1)  # записать первую единицу, которая встречается во всех примерах
 
@@ -23,7 +24,10 @@ def old_shivr(val):
             number2 = number1 + 1
             continue
         number2 += 1
-    return list_val
+    str1 = ""
+    for i in list_val:
+        str1 += str(i)
+    return str1
 
 
 print(old_shivr(val))

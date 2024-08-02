@@ -7,10 +7,11 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
 from crud_functions import *
 
-api = ''
+api = '6991565738:AAH410s3f9Ak0_zI-jiU5x5Mh4Tjy4qezUA'
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
-
+initiate_db()
+data = get_all_products()
 
 kb = InlineKeyboardMarkup(resize_keyboard=True)
 b1 = InlineKeyboardButton(text='Рассчитать норму калорий', callback_data='calories')

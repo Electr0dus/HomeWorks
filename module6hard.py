@@ -92,7 +92,7 @@ class Cube(Figure):
 
     def __init__(self, sides, color, filled=False):
         if isinstance(sides, list) != self.sides_count:
-            sides = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+            sides = [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
         super().__init__(sides, color, filled)
 
     def get_volume(self):
